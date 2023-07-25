@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="icon" href="../video/tab_icon.png">
+</head>
+<marquee direction="left"><h1>fill up this form for job purpose</h1></marquee>
+<body style="background-color:rgb(160, 203, 198);">
+    <form>
+        <fieldset style="background-color: rgb(237, 229, 218);border-radius:15px;border-color:rgb(144, 218, 41)">
+            <legend>job form</legend>
+            <lable for="name1">Name: </lable>
+        <br/>
+        <input type="text" id="name1" required>
+        <br/>
+        <lable for="email1">Email: </lable>
+        <br/>
+        <input type="email" id="email1" name="email" placeholder="enter email id" required>
+        <br/>
+        <lable for="phone1">Phone: </lable>
+        <br/>
+        <input type="tel" id="phone1" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <br/>
+        <lable for="resume1">Resume</lable>
+        <br/>
+        <input type="file" id="resume1">
+        <br>
+        <lable for="no">Experience (year)</lable>
+        <input type="number" id="no" min="0" max="5" >
+        <br/>
+        <fieldset >
+            <legend >Skills</legend>
+            <input type="radio" id="check" name="radio">
+            <br/>
+            <lable for="check">HTML</lable>
+            <br/>
+            <input type="radio" id="css" name="radio">
+            <br/>
+            <lable for="css">CSS</lable>
+            <br/>
+            <br/>
+            <input type="radio" id="c++" name="radio">
+            <br/>
+            <lable for="c++">C++</lable>
+        </fieldset>
+        <br/>
+        <lable for="hei">Highest education:</lable>
+        <select name="hei" id="hei">
+            <option name="a">school</option>
+            <option name="b">senior secondary</option>
+            <option name="c">college</option>
+        </select>
+        <br/>
+        <fieldset>
+            <legend>Availability</legend>
+            <input type="radio" id="ra" name="av">
+            <lable for="ra">FULL-TIME</lable>
+            <br/>
+            <input type="radio" id="ha" name="av">
+            <lable for="ha">PART-TIME</lable>
+        </fieldset>
+        <br/>
+        <lable for="com">Additions comments</lable>
+        <br/>
+        <textarea name="comment" id="com" rows="8" cols="50" placeholder="comment here"></textarea>
+        <br/>
+        <input type="submit" value="submit" >
+        </fieldset>
+    </form>
+</body>
+</html>

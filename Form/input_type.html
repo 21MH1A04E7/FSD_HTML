@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--text type is used to take input in text form-->
+    <form>
+        <lable for="text1">name: </lable>
+        <input type="text" id="text1" autofocus required autocomplete="off">
+        <br/><br/>
+        <!--number type is used to take input in number form with maximum and minimum parameter-->
+        <lable for="num1" >age</lable>
+        <input type="number" id="num1" max="18" min="5">
+        <br/><br/>
+        <!--tel type is used to take teliphone number with maxlength=""-->
+        <lable for="tel1">teliphone:</lable>
+        <input type="tel" maxlength="10" id="tel1" name="tel">
+        <br/><br/>
+        <!--password type use to take input as password-->
+        <lable for="pas">password:</lable>
+        <input type="password" id="pas" name="pas1">
+        <br/><br/>
+        <!--email type is used to take email for user-->
+        <lable for="email">email:</lable>
+        <input type="email" id="email" name="email1" placeholder="enter your email">
+        <!--range type have max,min and value parameter-->
+        <br/><br/>
+        <lable for="ran">range:</lable>
+        <input type="range" id="ran" name="ran1" min="0" max="100" value="5">
+        <br/><br/>
+        <lable for="select1">choose</lable>
+        <select id="select1">
+            <option>maggi</option>
+            <option>kurkure</option>
+            <option>chips</option>
+        </select>
+        <br/><br/>
+        <input type="submit" value="click here">
+        <input type="reset" value="reset">
+        <!--auotfocus-->
+        <!--autocomplete="off"-->
+        <!--required-->
+    </form>
+</body>
+</html>

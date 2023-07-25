@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="icon" href="../video/tab_icon.png">
+</head>
+<body>
+    <marquee >job form</marquee>
+    <form>
+        <fieldset>
+            <legend>Complex Form</legend>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <lable for="name1">Name:</lable>
+                <input type="text" id="name1" name="name" required>
+                <lable for="email1">Email: </lable>
+                <input type="email" id="email1" name="email" required>
+                <lable for="birth1">Date of Birth</lable>
+                <input type="date" id="birth1" name="birth" required>
+                <br/>
+                <lable for="radio">Gender</lable>
+                <input type="radio" id="radio1" name="gender">
+                <lable for="radio1">Male</lable>
+                <input type="radio" id="radio2" name="gender">
+                <lable for="radio2">Female</lable>
+                <input type="radio" id="other" name="gender">
+                <lable for="other">other</lable>
+                <br/>
+                <lable for="country">Country: </lable>
+                <select id="country" name="india">
+                    <option name="india">india</option>
+                    <option name="nepal">nepal</option>
+                    <option name="brazil">brazil</option>
+                    <option name="australia">australia</option>
+                    <option name="russia">russia</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <lable for="street1">Address street</lable>
+                    <input type="text" id="street1" name="street">
+                    <lable for="city">City:</lable>
+                    <input type="text" id="city" name="city">
+                    <lable for="zip1">Zip Code:</lable>
+                    <input type="text" id="zip1" name="zip">
+                </legend>
+            </fieldset>
+            <fieldset>
+                <legend>Other Information</legend>
+                <lable for="comment">comment</lable>
+                <textarea id="comment" rows="10" cols="60"></textarea>
+                <lable for="checkbox1">i agree to the terms and conditions</lable>
+                <input type="checkbox" id="checkbox1">
+            </fieldset>
+            <input type="submit" value="Submit" style="background-color: blue;color:white;">
+        </fieldset>
+    </form>
+   <video  controls id="video" height="100" width="0">
+    <source src="../video/bhanu.mp4" type="video/mp4">
+   </video>
+</body>
+</html>
