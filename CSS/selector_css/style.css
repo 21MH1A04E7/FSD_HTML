@@ -4,3 +4,34 @@
 .heading2{
    color:rgb(51, 0, 255);
 }
+*{
+  font-family:cursive;
+  margin:0px;
+  padding:0px;
+}
+#div_p{
+  text-align:center;
+}
+input[type]{
+  color:blue;
+}
+input[type="password"]{
+  color:red;
+}
+input[type="email"]{
+  color:green;
+}
+a[href]{
+  color:red;
+  background-color: aqua;
+}
+::placeholder{
+  color: rgb(217, 130, 130);
+}
+img[src]{
+  border:solid;
+  border-radius: 15px;
+  border-width:4px;
+  border-color:red;
+  background-color: rgb(180, 219, 113);
+}

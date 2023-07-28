@@ -1,0 +1,29 @@
+.button{
+    background-color: pink;
+    font-size:20px;
+    color:red;
+    width:120px;
+    height:30px;
+}
+button:hover{
+    cursor:pointer;
+    background-color: blue;
+    width:140px;
+    height: 40px;
+    color:black;
+}
+button:active{
+    background-color: blueviolet;
+}
+a:link{
+    color:green;
+}
+a:visited{
+    color:pink;
+}
+a:hover{
+    color:red;
+}
+a:active{
+    color:rgb(4, 255, 0);
+}

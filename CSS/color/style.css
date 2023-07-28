@@ -1,0 +1,10 @@
+.heading1{
+    color:red;
+    font-style:italic;
+}
+.paragraph1{
+    font-family:cursive;
+    color:blue;
+    line-height:30px;
+    background-color:pink;
+}
