@@ -8,18 +8,20 @@
 </head>
 <body>
     <div>
-        <header>
-            <h1>< epam ></h1>
+        <header id="header">
+            <h1 id="epam">< epam ></h1>
             <h2>HTML Elements</h2>
         </header>
         <hr>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="">heders</a>
-            <a href="#table">Table</a>
-            <a href="">Text formats</a>
-            <a href="">Blockquotes</a>
-        </nav>
+        <div class="row">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#header">heders</a>
+                <a href="#table">Table</a>
+                <a href="#textformats">Text formats</a>
+                <a href="#blockquotes">Blockquotes</a>
+            </nav>
+        </div>
         <hr>
         <div id="home">
             <h2>home</h2>
@@ -88,7 +90,71 @@
                 <li>item 3</li>
             </ol>
             <h3>definition list</h3>
+            <dl>
+                <dt>defines terms 1</dt>
+                <dd>description 1</dd>
+                <dt>defines terms 2</dt>
+                <dd>description 2</dd>
+            </dl>
+            <label for="selector">Details</label>
+            <select id="selector">
+                <option value="html">html</option>
+                <option value="css">css</option>
+                <option value="cpp">c++</option>
+            </select>
         </div>
+        <div id="textformats">
+            <h2>Text formats</h2>
+            <h2>Article text</h2>
+            <span>article descripiton</span>
+            <br/>
+            <span class="span">preformatted text</span>
+            <section>
+                    <pre>
+                                text 
+                        in a prce element 
+                        is depancedd findex
+                        both
+                           space and texi
+                              line break        
+
+                    </pre>
+            </section>
+            <span class="span">code</span>
+            <section>
+                <pre>
+                    .wapper{
+                        desplay:fex;
+                        verical-align:middle;
+                        justify-content:center;
+                    }
+                </pre>
+            </section>
+        </div>
+        <div id="blockquotes">
+            <span class="span">blockquotes</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Cupiditate vel numquam obcaecati molestiae minima ratione 
+                itaque sint commodi quaerat. Incidunt, debitis pariatur 
+                necessitatibus aliquid dicta blanditiis amet nesciunt? Ratione, odit?
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Elon_Musk" target="_blank">Elon musk</a>
+        </div>
+        <div class="form">
+            <form>
+            <lable for="name">first name:</lable>
+            <input type="text" id="name"><br>
+            <lable for="surname">surname</lable>
+            <input type="text" id="suname"><br>
+            <lable for="e">email:</lable>
+            <input type="email" id="e"><br>
+            <textarea id="textarea"></textarea><br>
+            <button>submit</button>
+            </form>
+        </div>
+        <footer>
+            <span id="footer">&#169; Copyright Epam Systems</span>
+        </footer>
     </div>
 </body>
 </html>

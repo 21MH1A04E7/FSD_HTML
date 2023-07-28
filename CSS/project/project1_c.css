@@ -9,3 +9,57 @@
     justify-content:center;
     align-items: center;
 }
+#epam{
+    text-align:center;
+}
+.span{
+    font-size:20px;
+}
+a[href]{
+    color:red;
+    font-size:15px;
+    padding-top:5px;
+    padding-left:10px;
+}
+a[href]:hover{
+    color:blue;
+}
+a[href]:active{
+    color:green;
+}
+.form{
+    text-align:right;
+}
+input[type]{
+    color:blue;
+    border:2px;
+    border:solid;
+    border-color:rgb(0, 255, 106);
+    border-radius:5px;
+  }
+  #textarea{
+    width:150px;
+    height:170px;
+    border-color:rgb(234, 22, 220);
+    border-width:3px;
+    border-radius:10px;
+    background-color: rgb(245, 244, 243);
+  }
+  button{
+    border-color:red;
+    background-color: pink;
+  }
+  button:hover{
+    background-color: black;
+    color:red;
+  }
+  button:active{
+    background-color: green;
+  }
+  footer{
+    text-align: center;
+  }
+  *{
+    background-color: rgb(204, 225, 243);
+  }
+  
