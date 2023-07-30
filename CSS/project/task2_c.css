@@ -1,0 +1,120 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.first{
+    border:2px green solid;
+    box-sizing: border-box;
+    padding-right:130px;
+    padding-top:60px;
+    color:rgb(18, 10, 10);
+    text-align:right;
+    height:500px;
+}
+#d{
+    background-color: rgb(43, 0, 255);
+    height: 25px;
+    width:70px;
+    border-radius:12px;
+}
+a[href]{
+    color:red;
+    font-size:15px
+}
+a[href]:hover{
+    color:black;
+}
+#d:hover{
+    cursor:pointer;
+    color:black;
+    background-color: pink;
+    border-color:red;
+}
+#d:active{
+    opacity:0.5;
+}
+a{
+    text-decoration: none;
+}
+#travel1{
+    height: 400px;
+    float:left;
+    padding-top:30px;
+}
+.help{
+    box-sizing: border-box;
+    border:2px red solid;
+    height:400px;
+    background-color: rgb(113, 159, 245);
+}
+.help1{
+    text-align:center;
+    color:white;
+    border:2px solid green;
+    
+}
+#h2{
+    margin-left:350px;
+}
+.help2{
+    margin-top:30px;
+    box-sizing: border-box;
+    height:250px;
+    width:200px;
+    float:left;
+    border-radius:10px;
+    
+}
+#h2,#h4{
+    background-color: rgb(185, 201, 234);
+}
+#h3,#h5{
+    background-color: rgb(147, 225, 199);
+    opacity:0.5;
+}
+.m1{
+    box-sizing: border-box;
+    margin-top:20px;
+    margin-left:30px;
+    width:70px;
+    border-radius:20px;
+}
+.content1{
+    width:350px;
+    height:430px;
+     background-color: rgb(232, 236, 244);
+     border-radius:20px;
+    margin-left:400px;
+    float:left;
+}
+.content2{
+    width:350px;
+    height:430px;
+    float:left;
+    background-color: rgb(232, 236, 244);
+    border-radius:20px;
+}
+#p_content1{
+    text-align:left;
+    font-size:30px;
+}
+#button2{
+    float:left;
+    width:80px;
+    height:30px;
+    border-radius:15px;
+    background-color: skyblue;
+}
+#second_span{
+    text-align:left;
+}
+.park_div,#first_span{
+  text-align:left;
+  font-size:20px;
+}
+#park{
+    margin-top:20px;
+    margin-right:0px;
+}
+
