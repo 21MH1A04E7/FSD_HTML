@@ -117,4 +117,55 @@ a{
     margin-top:20px;
     margin-right:0px;
 }
+#div1_help{
+    margin-left:400px;
+}
+.div1,.div2{
+    float:left;
+    margin-top:50px;
+    border:1px solid black;
+    width:350px;
+    height:300px;
+}
+#travel_tree{
+    margin:40px;
+    border:none;
+    border-radius:20px;
+    opacity:0.5;
+}
+#p1_div2{
+    font-size:30px;
+    font-style:solid;
+    color:whitesmoke;
+}
+#p_div2,#h3_div2{
+    margin-top:30px;
+    color:whitesmoke;
+    text-align:center;
+}
+#p_div2{
+    text-align:right;
+}
+#con2,#contact{
+    background-color: white;
+}
+#contactus{
+    text-align: center;
+    font-size:30px;
+    color:rgb(15, 166, 236);
+    padding-top:30px;
+    font-style: bold;
+}
+#big,#tel_logo{
+    padding-top:60px;
+    width:60px;
+    float:left;
+}
+#c_imag{
+    margin-right:10px;
+    margin-top:70px;
+    border-radius:10px;
+    height:220px;
+    opacity:0.7;
+}
 
