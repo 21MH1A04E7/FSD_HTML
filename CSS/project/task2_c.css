@@ -168,4 +168,8 @@ a{
     height:220px;
     opacity:0.7;
 }
+.get{
+    height:150px;
+    border:1px solid red;
+}
 

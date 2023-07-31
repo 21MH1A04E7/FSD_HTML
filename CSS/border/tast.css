@@ -1,0 +1,24 @@
+.div1{
+    box-sizing: border-box;
+    width:70px;
+    height: 40px;
+    display:inline-block;
+    border-style:dotted;
+    padding:10px;
+    margin-left:20px;
+}
+#div2{
+    border-style:dashed;
+}
+#div3{
+    border-style:solid;
+}
+#div4{
+    border-style:double;
+}
+#div5{
+    border-style:ridge;
+}
+#div6{
+    border-style: inset;
+}

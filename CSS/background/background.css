@@ -1,0 +1,18 @@
+body{
+    background-image:url("background.jpg");
+}
+.div1{
+    height:400px;
+    width:400px;
+    background-image: url("google.png");
+    background-size:cover;
+    background-repeat:none repeat;
+    float:left;
+}
+.div2{
+    margin-left:20px;
+    height:400px;
+    width:400px;
+    background-image:url(google.png);
+    float:left;
+}
