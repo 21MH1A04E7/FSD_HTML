@@ -1,9 +1,10 @@
 .div1{
     box-sizing: border-box;
-    width:70px;
-    height: 40px;
+    width:80px;
+    height: 50px;
     display:inline-block;
     border-style:dotted;
+    border-width:6px;
     padding:10px;
     margin-left:20px;
 }
@@ -21,4 +22,10 @@
 }
 #div6{
     border-style: inset;
+}
+#div7{
+    border-style:none;
+}
+#div8{
+    border-style:hidden;
 }
