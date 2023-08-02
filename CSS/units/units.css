@@ -1,0 +1,28 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.p1{
+    font-size:30px;
+}
+.p2{
+    font-size:2cm;
+}
+.p3{
+    /* relative units 2em means 2 times the size of the current font  */
+    font-size:2em;
+}
+.p4{
+    font-size:2rem;
+}
+.div2{
+    height:40px;
+    background-color: red;
+    width:50vw;
+}
+.circle{
+    background-color: aqua;
+    height:100px;
+    width:100px;
+    border-radius:50%;
+}
