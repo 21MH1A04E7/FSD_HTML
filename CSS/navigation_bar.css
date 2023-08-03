@@ -24,7 +24,14 @@ a:hover{
 a:active{
     color:rgb(17, 255, 0);
 }
-input[placeholder]{
-    color:black;
+input[type]{
     color:red;
+}
+::placeholder{
+    color:blue;
+}
+p{
+    font-size:20px;
+    line-height: 40px;
+    font-family:cursive;
 }
