@@ -3,6 +3,9 @@
     padding:0px;
     box-sizing:border-box;
 }
+body{
+    background-color: rgb(233, 226, 216);
+}
 .div1{
     position:fixed;
     height:55px;
@@ -58,6 +61,7 @@ a{
     float:right;
     margin-top:30px;
     margin-right:200px;
+    background-color:rgb(249, 236, 236);
 }
 .imag_div{
     margin-left:120px;
@@ -159,3 +163,7 @@ input{
     border:none;
     color:white;
 }
+input[type="range"] {
+    background-color: #e6c41b;
+  }
+  
