@@ -69,7 +69,7 @@ a{
     border:3px solid rgb(0, 187, 255);
     height:100px;
     width:100px;
-    background-image: url('boy_logo1.jpg');
+    background-image: url('https://img.freepik.com/free-icon/user-male-shape-circle-ios-7-interface-symbol_318-35357.jpg');
     background-size: cover;
     border-radius:50%; 
     margin-bottom:4px;
@@ -173,5 +173,22 @@ progress{
     background-color: red;
 }
 progress::-webkit-progress-bar {
-    background-color: orange;
+    background-color: rgb(168, 159, 141);
  }
+ #backend::-webkit-progress-value{
+    background-color:skyblue;
+ }
+ #mobilet::-webkit-progress-value{
+    background-color:yellow;
+ }
+ #onepage::-webkit-progress-value{
+    background-color:green;
+ }
+ #website::-webkit-progress-value{
+    background-color:red;
+ }
+ #webpage::-webkit-progress-value{
+    background-color:blue;
+ }
+ 
+ 
