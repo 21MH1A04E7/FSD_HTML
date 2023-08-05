@@ -71,13 +71,13 @@ a[href]{
     margin-top:30px;
     margin-left:115px;
     width:50px;
-    border:2px solid orangered;
+    border:1px solid orangered;
 }
 .box4{
     height:500px;
     width:1400px;
     margin-left:40px;
-    border:2px solid rgb(202, 2, 2);
+    border:2px solid white;
     background-image: url('../images/hill2.jpg');
     background-size: cover;
 }
@@ -111,8 +111,18 @@ a[href]{
     width:1050px;
 }
 #button1{
+    text-align:center;
     position:relative;
-    bottom:50px;
+    bottom:70px;
+    height:30px;
+    width:100px;
+    border-radius:4px;
+    border:none;
+    background-color: rgb(255, 81, 0);
+    color:white;
+}
+#show{
+    color:white;
 }
 .box5_div11{
     height:560px;
@@ -157,3 +167,65 @@ a[href]{
 #cont2,#cont4{
     margin-left:14px;
 }
+#amazing{
+    text-align: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    opacity:0.7;
+    font-size:18px;
+    word-spacing:5px;
+}
+#line1{
+    margin-left:705px;
+}
+#lorem1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity:0.7;
+    font-size:13px;
+    font-weight:lighter;
+}
+.box6{
+    margin-left:150px;
+    height:1100px;
+    width:1200px;
+    display:flex;
+    justify-content: space-between;
+}
+.box6_1{
+    height:1100px;
+    width:380px;
+    float:left;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.box6_div1{
+    height:540px;
+    width:380px;
+    background-image: url('../images/box6_img1.jpg');
+    background-size: cover;
+}
+.box6_div2{
+    height:350px;
+    width:380px;
+}
+#box6_img2{
+    background-image: url('../images/box6_img2.jpg');
+}
+#box6_img6{
+    background-image: url('../images/box6_img6.jpg');
+}
+#box6_img7{
+    background-image: url('../images/box6_img7.jpg');
+}
+.box6_div2{
+    background-image: url('../images/box6_img3.jpg');
+    background-size:cover;
+}
+#box6_img4{
+    background-image: url('../images/box6_img4.jpg');
+}
+#box6_img5{
+    background-image: url('../images/box6_img5.jpg');
+}
+
