@@ -251,6 +251,7 @@ input[type="submit"]{
     height:750px;
     width:1400px;
     margin-left:40px;
+    border:1px solid white;
     background-image: url('../images/last_img.jpg');
     background-size:cover;
 }
