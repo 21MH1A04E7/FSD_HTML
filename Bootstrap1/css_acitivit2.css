@@ -1,0 +1,45 @@
+h1{
+    color:red;
+}
+.b{
+    border:1vh solid whitesmoke;
+}
+.sky,.r,.or,.g{
+    color:skyblue;
+    font-size:20px;
+}
+.r{
+    color:red;
+}
+.or{
+    color:orange;
+}
+.g{
+    color:green;
+}
+.p{
+    opacity:0.8;
+}
+.col1{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items:center;
+   
+}
+.row1{
+    font-size:20px;
+}
+.col2{
+    margin-top:5%;
+}
+i{
+    font-size:30px;
+}
+.left1{
+    padding-top:7px;
+   float:right;
+}
+progress::-webkit-progress-bar {
+    background-color: red;
+ }
