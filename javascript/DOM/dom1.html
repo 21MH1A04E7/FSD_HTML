@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head1">heading one by innerHTML</h1>
+    <h2 id="head2">heading two by innerText</h2>
+    <script>
+        let hh=document.getElementById('head1');
+        //get the element h1
+        hh.innerHTML='<p> Fsd affternoon Batch </p>';
+        //get the element h2
+        hh.style.fontSize="100px";
+        let hh2=document.getElementById('head2');
+        hh2.innerText='<p> fsd morning bacth </p>'
+        hh2.style.color="red";
+    </script>
+</body>
+</html>
