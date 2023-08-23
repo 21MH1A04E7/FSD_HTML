@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p_id{
+            
+            font-weight:bold;
+            font-size:30px;
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <select style="width:300px;height:40px" onchange="getvalue(this.value)">
+            <option>----college----</option>
+            <option value="ACE">ACE</option>
+            <option value="ACET">ACET</option>
+            <option value="ACOE">ACOE</option>
+        </select>
+        <p id="p_id"></p>
+    </center>
+    <script>
+        function getvalue (name) {
+            document.getElementById('p_id').innerHTML=name;
+        }
+        console.log("5" *3)
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <table id="tbody" border="3">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table> -->
+    <table border="2">
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+    <script>
+        //  let td1=document.getElementsByTagName('td');
+        //  let arr=["cse","ece","mech","eee",278,342,411,523,642,745,21,814,328,245,946,745]
+        // for(let i=0;i<td1.length;i++){
+        // //     let input;
+        // //     if(i<=3){
+        // //         input=prompt("ente course name")
+        // // }else{
+        // //     input=prompt("enter value");
+        // // }
+        //     td1[i].innerText=arr[i];
+        // }
+        let arr=[
+            {
+                name:"course name",
+                no:234123,
+                fee:452,
+                place:"dps"
+            },{
+                name:"course name",
+                no:4520,
+                "fee":234,
+                "place":"hrd"
+            },{
+                name:"course name",
+                no:56123,
+                fee:485,
+                place:"dps"
+            },{
+                name:"course name",
+                no:234123,
+                fee:452,
+                place:"dps"
+            }
+        ]
+        //    document.write(arr.length);
+           for(let i=0;i<arr.length;i++){
+             let tr=document.createElement('tr');
+             let td1=document.createElement('td');
+             let td2=document.createElement('td');
+             let td3=document.createElement('td');
+             let td4=document.createElement('td');
+             td1.innerText=arr[i].name;
+             td2.innerText=arr[i].no;
+             td3.innerText=arr[i].fee;
+             td4.innerText=arr[i].place;
+             tr.append(td1);
+             tr.append(td2);
+             tr.append(td3);
+             tr.append(td4);
+             document.getElementById('tbody').append(tr);
+        }
+        // let tdElements = document.querySelectorAll('table#tbody td');
+        // for (let i = 0; i < arr.length; i++) {
+        // let data = Object.values(arr[i]); // Get an array of object values
+        // for (let j = 0; j < data.length; j++) {
+        //     tdElements[i * data.length + j].innerText = data[j];
+        // }
+    // }
+    </script>
+</body>
+</html>

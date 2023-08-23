@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="increase()">increase by 1</button>
+    <button onclick="decrease()">decrease by 1</button>
+    <p id="output"></p>
+    <script>
+        let num=0;
+        function increase(){
+            if(num<10){
+                document.getElementById('output').innerText=++num;
+            }else{
+                alert("sorry can't increase the num")
+            }
+        }
+        function decrease(){
+           if(num>0){
+            document.getElementById('output').innerText=--num;
+           }else{
+            alert("sorry can't decrease the num");
+           }
+        }
+    </script>
+</body>
+</html>

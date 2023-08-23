@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>loop in array</h1>
+    <script>
+        let arr=[2,6,4,8,9,12];
+        //for each loop
+        arr.forEach((element)=>{
+            document.write(element*element+" ");
+        })
+        //Array.from(arr_name) is used to creat a arry from object
+        let name="hariom";
+        document.write("<br>")
+        let arr2=Array.from(name);
+        document.write("array of string ",arr2);//[ 'h', 'a', 'r', 'i' ]  
+        document.write("<br>")  
+        for(let i of arr){
+            document.write(i);
+        }
+        //for in loop
+        document.write("<br>")  
+        for(let r in arr){
+            document.write(r+" ");
+            document.write(arr[r]);
+            document.write("<br>")
+        }
+    </script>
+</body>
+</html>

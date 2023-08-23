@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height:200px;
+            border:1px solid red;
+            width:300px;
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: antiquewhite;
+        }
+        .div2{
+            border:1px solid black;
+            height:40px;
+            width:80px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        #show_value{
+            font-size:25px;
+            font-weight:bold;
+            color:red;
+        }
+        .div3{
+            height:40px;
+            width:150px;
+            border:1px solid black;
+            text-align: center;
+            font-size:20px;
+            padding-bottom:8px;
+            background-color: rgb(183, 243, 243);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="div1">
+            <lable for="radio1">1</lable>
+            <input type="radio" name="radio" id="radio1" onclick="getnum('1')">
+            <lable for="radio1">2</lable>
+            <input type="radio" name="radio" id="radio1" onclick="getnum('2')">
+            <lable for="radio1">3</lable>
+            <input type="radio" name="radio" id="radio1" onclick="getnum('3')">
+            <lable for="radio1">4</lable>
+            <input type="radio" name="radio" id="radio1" onclick="getnum('4')">
+            <lable for="radio1">5</lable>
+            <input type="radio" name="radio" id="radio1" onclick="getnum('5')">
+        </div>
+        <span>actuall number</span>
+        <div class="div2">
+            <p id="show_value">
+            </p>
+        </div>
+       <div class="div3">
+        <p id="result">
+    
+        </p>
+       </div>
+    </div>
+    <script>
+        function getnum(val){
+            let x = Math.floor((Math.random() * 5) + 1);
+            document.getElementById('show_value').innerHTML=x;
+            if(x==val){
+                document.getElementById('result').innerHTML="you won the game";
+            }else{
+                document.getElementById('result').innerHTML="you loss  the game";
+            }
+        }
+    </script>
+</body>
+</html>

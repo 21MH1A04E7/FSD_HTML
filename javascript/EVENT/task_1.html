@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border:1px solid black;
+            height:250px;
+            width:300px;
+            display:flex;
+            flex-direction:column;
+        }
+        .div1{
+            border:1px solid black;
+            width:300px;
+            height:150px;
+            text-align:center;
+        }
+        .div2{
+            border:1px solid red;
+            height:50px;
+            width:300px;
+        }
+        #img{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="output_id">
+        <div class="div1">
+           <p>techinal hub</p>
+           <p>full stack trainer</p>
+        </div>
+        <div class="div2">
+           <img src="3.jpg" style="height:50px;" onclick="getaddres('3.jpg')" id="img"> 
+        </div>
+    </div>
+    <script>
+        function getaddres(x){
+            document.getElementById('output_id').innerHTML="<img src='"+x+"'style='height:200px'>";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>map filter and </h1>
+    <script>
+        let arr=[2,34,78];
+        //it will not effect the original array
+        //value index array
+        //map will create a new array
+        let a=arr.map((value,index,array)=>{
+            document.write(value+" "+" "+index+" "+array+"<br>");
+            return value+index;//value +index
+        })
+        document.write("<br>");
+        document.write(a);//created a new array
+        //array filter 
+        let arr2=[23,2,34,7,9,4,45,65];
+        //filter only even numbers from the above array
+        let arr3=arr2.filter((a)=>{
+            return a%2;
+        })
+        document.write("<br>");
+        document.write("print arr2 "+arr2+"<br>");
+        document.write("printing arr3 after filtering the array"+"<br>")
+        document.write(arr3);
+        //reduce method
+        let arr5=[1,2,3,4,5,6]
+        document.write("<br>");
+        let newarr=arr5.reduce((a,b)=>{
+             return a+b;
+        })
+        document.write(newarr);
+
+    </script>
+</body>
+</html>

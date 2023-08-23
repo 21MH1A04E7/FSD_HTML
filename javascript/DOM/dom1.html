@@ -6,8 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- HTML DOM methods are actions you can perform (on HTML Elements). -->
     <h1 id="head1">heading one by innerHTML</h1>
     <h2 id="head2">heading two by innerText</h2>
+    <!-- img tag -->
+    <img id="myimg" src="ss.png">
+    <!-- form  -->
+    <input type="text" value="enter your name" id="input1">
+    <!-- style-->
+    <br>
+    <input type="text" id="input2">
+    <p id="name1">Please enter name</p>
     <script>
         let hh=document.getElementById('head1');
         //get the element h1
@@ -17,6 +26,19 @@
         let hh2=document.getElementById('head2');
         hh2.innerText='<p> fsd morning bacth </p>'
         hh2.style.color="red";
+        //dispalying image
+        let x=document.getElementById("myimg");
+        x.src="../../amzonclone/image/amazon_logo.png";
+        x.style.height="300px";
+        x.style.width="300px";
+        //change value of form using javascript
+        let inp=document.getElementById('input1');
+        inp.value="enter your rollno";
+        let inp2=document.getElementById('input2');
+        inp2.style.border="2px solid red";
+        let id_name1=document.getElementById('name1');
+        id_name1.style.color="red";
+        id_name1.style.fontSize="50px";
     </script>
 </body>
 </html>

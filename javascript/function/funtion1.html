@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check(){
+    document.write("cheack");
+    }
+    check();
+    document.write("<br>");
+    //with argument
+    function sum(a,b){
+        document.write(a+b+"<br>");
+    }
+    sum(5,3);
+    //with argument
+    function getname(name){
+        document.write(name);
+    }
+    getname("hariom");
+    // taking input from the browser
+    document.write("<br>");
+    // let rollno=prompt("enter the roll no");
+    // function getrollno(rollno){
+    //     document.write(rollno);
+    // }
+    // getrollno(rollno);
+    //function with two arguments
+    document.write("function with two argument"+"<br>");
+    function sum(num1=0,num2=0){//by default it will take zero
+        document.write(num1+num2);
+    }
+    sum();
+    document.write("<br>");
+    //
+    function fun(a){
+        // document.write("cube of "+a+" is :"+a*a*a+"<br>");
+        document.write("cube of "+a+ " is :"+Math.pow(a,3));
+    }
+    fun(3);
+    document.write("<br>");
+    //anonymous funcions is a functions without having function name
+    var output=function(num){
+        return num*20;
+    }
+    document.write(output(90));
+    document.write("<br>");
+    //arrow function
+    arrow=(a,b)=>{
+        document.write(a+b);
+    }
+    arrow(87,966);
+    //arrow funtion without parameter
+    document.write("<br>"); 
+    printing= _=>{
+        document.write("testing....");
+    }
+    printing()
+    //call back_function
+    //setTimeout is function it will executed after given time
+    // setTimeout(test1,2000);
+    // function test1(){
+    //     document.write("execute after 2 second");
+    // }
+    // setTimeout(function(){
+    //     document.write('hello world')
+    // },5000)
+    
+    //event
+    </script>
+</body>
+</html>

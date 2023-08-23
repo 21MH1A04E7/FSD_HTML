@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>important method of array</h1>
+    <script>
+        let num=[1,23,4,5,66];
+        //toString is used to convert array into a string
+        let b=num.toString();
+        document.write(b);//1,23,4,5,66
+        //joint is used to joint any value with array value
+        //it will convert array into a string
+        let c=num.join("_");
+        document.write("<br>");
+        document.write(c+" "+typeof(c));
+        //pop method it will remove last element from the array it will the actuall array
+        document.write("<br>");
+        let r=num.pop();
+        document.write(num);
+        //remove element 
+        document.write("<br>");
+        document.write(r);
+        //push will include the new element in last
+        num.push(9000);
+        document.write("<br>");
+        document.write(num);
+        document.write("<br>");
+        //remove element form the start of the array
+        let first=num.shift();
+        document.write(first);
+        document.write("<br>");
+        document.write(num);
+        //add a element from the start of the array
+        num.unshift(444);
+        document.write("<br>");
+        document.write(num);
+
+    </script>
+</body>
+</html>

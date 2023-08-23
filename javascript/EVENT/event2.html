@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn_id">Click Here</button>
+    <script>
+        let btn=document.getElementById('btn_id');
+        // btn.onclick=tes
+        // function tes(){
+        //     alert("warning");
+        // }
+        btn.onclick=function(){
+            alert("warning");//anonymous function
+            btn.style.fontSize="100px";
+            btn.style.color="red";
+            btn.style.background="blue";
+            btn.style.border="5px solid red";
+        }
+    </script>
+</body>
+</html>

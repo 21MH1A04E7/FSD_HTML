@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            text-align: center;
+            font-weight: bold;
+            border:2px solid rgb(217, 165, 165);
+        }
+        td:not(#result_id){
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h3>calculator</h3>
+    <table border="1" cellspacing="0" cellpadding="6" width="400" id="table_id">
+        <tr>
+            <td colspan="4" style="height:30px;text-align: right;" id="result_id"></td>
+        </tr>
+        <tr>
+            <td >9</td>
+            <td >8</td>
+            <td >7</td>
+            <td >/</td>
+        </tr>
+        <tr>
+            <td >6</td>
+            <td >5</td>
+            <td >4</td>
+            <td >*</td>
+        </tr>
+        <tr>
+            <td >3</td>
+            <td >2</td>
+            <td >1</td>
+            <td >-</td>
+        </tr>
+        <tr>
+            <td >0</td>
+            <td >c</td>
+            <td >=</td>
+            <td >+</td>
+        </tr>
+        <script>
+            var tds=document.querySelectorAll('#table_id td');
+            for(var i=0;i<tds.length;i++){
+                td[i].addEventListener("click",function());
+                var val=this.innerText
+                if(val=='='){
+                    var getres=document.getElementById('result_id').innerText
+                    document.getElementById('result_id').innetText=eval(getres);
+                }else{
+                    if(val=='c'){
+                        document.getElementById('result_id').innerText='';
+                    }else{
+                        document.getElementById('result_id').innerText+=val;
+                    }
+                }
+            }
+        </script>
+    </table>
+</body>
+</html>

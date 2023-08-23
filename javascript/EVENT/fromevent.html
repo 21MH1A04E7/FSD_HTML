@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="my_form">
+        <lable >enter your id</lable>
+        <input type="text">
+        <br>
+        <br>
+        <lable>enter password</lable>
+        <input type="password">
+        <br>
+        <select>
+            <option>----college----</option>
+            <option>ace</option>
+            <option>ACOE</option>
+            <option>ACOE</option>
+        </select>
+        <input type="button" value="Submit" onclick="getsubmit()">
+        <input type="button" value="Reset" onclick="getreset()" >
+        <script>
+            function getsubmit(){
+                document.getElementById('my_form').submit();
+            }
+            function getreset(){
+                document.getElementById('my_form').reset();
+            }
+        </script>
+    </form>
+</body>
+</html>

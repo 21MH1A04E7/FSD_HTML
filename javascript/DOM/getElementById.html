@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>By Class</h1>
+    <p class="course">Html</p>
+    <p class="course">css</p>
+    <p class="course">java</p>
+    <ul>
+        <li>ace</li>
+        <li>acet</li>
+        <li>acoe</li>
+    </ul>
+    <table border="1" >
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <!-- querySelector -->
+        <!-- document.querySlector('#idname,.classname,tagname') -->
+    </table>
+    <script>
+        // HTML DOM methods are actions you can perform (on HTML Elements).
+        //HTML DOM properties are values (of HTML Elements) that you can set or change.
+        let para=document.getElementsByClassName('course');
+        para[0].innerText='hyper';
+        para[1].style.color="red";
+        para[1].style.fontSize="60px";
+        para[2].style.fontSize="50px";
+        para[2].style.color="blue";
+        //getElementsByTagName
+        let list=document.getElementsByTagName('li');
+        list[0].style.color="red";
+        list[0].style.fontSize="50px";
+        //javascript code for table
+        let td1=document.getElementsByTagName('td');
+        for(let i=0;i<td1.length;i++){
+            td1[i].innerText=td1.length-i;
+        }
+        
+    </script>
+</body>
+</html>

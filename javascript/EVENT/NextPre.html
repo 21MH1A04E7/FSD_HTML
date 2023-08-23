@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height:50px;
+            width:120px;
+            border:none;
+            background-color: yellowgreen;
+            border-radius:10px;
+            font-size:20px;
+            font-style:oblique;
+        }
+        button:hover{
+            cursor:pointer;
+            background-color: rgb(179, 134, 75);
+            color:yellow;
+        }
+        button:active{
+            opacity:0.6;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <button onclick="nextslide()">Next</button>
+        <button onclick="preslide()">Pre</button>
+    </center>
+    <p id="output_id">
+        <!-- bydefault -->
+        <img src="1.jpg">
+    </p>
+    <script>
+        var i=0;
+        function nextslide(){
+            if(i<5){
+                var num=++i;
+                document.getElementById('output_id').innerHTML="<img src='"+num+".jpg' >";
+            }
+        }
+        function preslide(){
+            if(i>1){
+                var num=--i;
+                document.getElementById('output_id').innerHTML="<img src='"+num+".jpg'>";
+            }
+        }
+    </script>
+</body>
+</html>

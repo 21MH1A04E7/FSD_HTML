@@ -9,7 +9,6 @@
     <h1>string method</h1>
     <script>
         let str ='hello world';
-        alert("hi");
         document.write(str);
         document.write("<br>");
         document.write("character at index 1 is -- "+str.charAt(1));
@@ -21,8 +20,41 @@
         document.write(str.indexOf('e'));
         //length will return the length of string 
         document.write("<br>");
-        document.write(str.length)
+        document.write(str.length+"<br>")
         //repalce method is used to repalce that content with particular content
+        let stt="hariom kumaor";
+        let stt2= new String('hariom kumar');
+        document.write(typeof(stt)+"<br>");
+        document.write(typeof(stt2)+"<br>")
+        document.write("last character "+stt.lastIndexOf('o')+"<br>");
+        let str4="       hariom   ";
+        //trim method
+        document.write("trim method   "+str4.trim()+"<br>");
+        document.write("toUpperCase  "+str4.toUpperCase()+"<br>")
+        let name4="ADITYA CAMPUS";
+        //toLowerCase
+        document.write("toLowerCase "+name4.toLowerCase()+"<br>")
+        //concat
+        let ss1="hariom";
+        let ss2=" kumar";
+        document.write(ss1.concat(ss2));
+        //includes method is used to find the particular word 
+        //it will return true and false
+        let ss6="hariom kumar";
+        document.write("<br>");
+        document.write(ss6.includes('hariom')+"<br>");
+        document.write(ss6.includes('hai')+"<br>");
+        let arr=ss6.split("");
+        document.write(arr[0]+"<br>")//convert into string 
+        document.write(arr+"<br>");
+        let ss7="hariom kumar sahu"
+        document.write(ss7.split("&")+"<br>");//string divided by base on the terminater
+        document.write(ss7.split(",")+"<br>");//string will divide on base on the terminater
+        //startsWith and endsWith are to check first and last letter it will always return true and false value
+        document.write(ss7.startsWith('h')+"<br>");
+        document.write(ss7.startsWith('e')+"<br>");
+        document.write(ss7.endsWith('u')+"<br>");
+        document.write(ss7.endsWith('y')+"<br>");
         
     </script>
 </body>

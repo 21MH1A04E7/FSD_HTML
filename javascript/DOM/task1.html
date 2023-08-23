@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+        height:500px;
+        width:1000px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    .box1,.box2{
+        height:460px;
+        width:640px;
+        border:2px solid black;
+    }
+    .box2{
+        width:300px;
+    }
+    #img{
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+            <img src="../EVENT/1.jpg" width="150px" height="100px" onclick="getimage('../EVENT/1.jpg')" id="img">
+            <img src="../EVENT/2.jpg" width="150px" height="100px" onclick="getimage('../EVENT/2.jpg')" id="img">
+            <img src="../EVENT/3.jpg" width="150px" height="100px" onclick="getimage('../EVENT/3.jpg')" id="img">
+            <img src="../EVENT/4.jpg" width="150px" height="100px" onclick="getimage('../EVENT/4.jpg')" id="img">
+        </div>
+        <div class="box2" id="output_id">
+
+        </div>
+    </div>
+    <script>
+        function getimage(val){
+            document.getElementById('output_id').innerHTML=" <img src='"+val+"' style='width:300px;height:460px''>";
+        }
+    </script>
+</body>
+</html>

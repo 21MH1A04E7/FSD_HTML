@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:200px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div id="hello">hariom</div>
+    <button onclick="hide()">hide</button>
+    <button onclick="show()">show</button>
+    <script>
+        let hea=document.getElementById('hello');
+        function show(){
+            hea.style.display="block";
+        }
+        function hide(){
+            hea.style.display="none";
+            
+        }
+    </script>
+</body>
+</html>

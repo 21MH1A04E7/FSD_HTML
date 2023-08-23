@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hariom</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, est!</h2>
+    <p id="dd">Lorem ipsum dolor sit.</p>
+    <h3>heading 2</h3>
+    <div>div tag</div>
+    <div class="div1">divisition 1</div>
+    <div class="div2">divisition 2</div>
+    <script>
+        const nodelist=document.querySelectorAll("h1,div");
+        for(let i=0;i<nodelist.length;i++){
+            nodelist[i].style.color="red";
+        }
+        let node2=document.querySelectorAll(".div1,h2,#dd");//selecting div1 class , h2 tag and dd id
+        for(let i=0;i<node2.length;i++){
+            node2[i].style.color="blue";//changing color into the red
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDIV{
+          height:200px;
+          background-color: rgb(234, 185, 185);
+        }
+    </style>
+</head>
+<body>
+    <button onclick="myFunction()">click</button>
+    <div id="myDIV">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione expedita fugiat ea cupiditate consequatur, maiores nemo voluptatum dolore iusto ducimus.</p>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                 x.style.display = "block";
+            } else {
+             x.style.display = "none";
+         }
+    }
+    </script>
+</body>
+</html>
