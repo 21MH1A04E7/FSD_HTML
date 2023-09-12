@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Regular Expression</h2>
+    <script>
+        //it is case sensitive
+        let re=/batch/;
+        let output=re.test("Fullstack batch");
+        if(output==true){
+            console.log("valid");
+        }else{
+            console.log("not a valid");
+        }
+        console.log(output);
+        let re1=/bacth/i;
+        let check=re1.test("Fullstack BATCH");
+        console.log(check);
+        //=============================//
+        let cheack2=/^b/;
+        let output3=cheack2.test("batch");
+        console.log(output3);
+        //true  (beacuse it is staring from b letter)
+        let cheack3=/^b/;
+        let output4=cheack2.test("tbatch");
+        console.log(output4);
+        //flase  (beacuse it is not staring from b letter)
+        //-------------------------------------------------------//
+        let rel1=/batch/;
+        let output6=rel1.exec("full stack batch course batch");
+        console.log(output6);
+        console.log(output6.index);
+        let rel2=/batch/g;
+        let output7=rel2.exec("full stack batch course batch");
+        console.log(output7.index);
+
+        //----------------------------------------------//
+        let rel4=/^[0-9]{10}/
+        let rel5=/^[0-9]{10}$/
+        let rel6=/^[9][0-9]{10}$/
+        let output8=rel4.test("9876543210");
+        console.log(output8);
+        let output9=rel5.test("9876543210");
+        console.log(output9);
+        let output10=rel6.test("9876543210");
+        console.log(output10)
+    </script>
+</body>
+</html>

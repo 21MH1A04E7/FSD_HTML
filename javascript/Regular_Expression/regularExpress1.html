@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="span_id1">
+    <button onclick="check()">check validity</button>
+    <br>
+    <span id="span_id2"></span>
+    <script>
+        function check(){
+        let re=/[8][0-9]{10}$/;
+        let n=document.getElementById('span_id1').value;
+        output=re.test(n);
+        if(output==true){
+            document.getElementById('span_id2').innerText="correct";
+            document.getElementById('span_id2').style.color="green";
+        }else{
+            document.getElementById('span_id2').innerText=" incorrect value";
+            document.getElementById('span_id2').style.color="red";
+        }
+        }
+
+    </script>
+</body>
+</html>

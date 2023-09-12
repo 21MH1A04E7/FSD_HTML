@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+body{
+    background:rgb(202, 233, 233);
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+.add{
+ margin-left:100px;
+ height: 30px;
+ width:80px;
+ border:none;
+ outline: none;
+ background-color: rgb(69, 222, 110);
+ border-radius:5px;
+ margin-bottom:5px;
+}
+.add:hover{
+    background-color: pink;
+}
+.add:active{
+    opacity: 0.5;
+}
+.update,.delete{
+    height:30px;
+    width: 4rem;
+    background-color: brown;
+    border-color:yellow;
+    outline: none;
+}
+.update:active,.delete:active{
+    background-color: #fff;
+}
+input{
+    height:30px;
+}

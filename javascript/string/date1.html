@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>year,month,day,hours,minutes,seconds,milliseconds</h3>
+    <script>
+        const d=new Date();
+        document.write(d+"<br>");
+        document.write(d.getFullYear()+"<br>");//Get year as a four digit number (yyyy)
+        document.write(d.getMonth()+1+"<br>");//Get month as a number (0-11)
+        document.write(d.getDate()+"<br>");//Get day as a number (1-31)
+        document.write(d.getDay()+"<br>");//Get weekday as a number (0-6)
+        document.write(d.getHours()+"<br>");//Get hour (0-23)
+        document.write(d.getMinutes()+"<br>");
+        document.write(d.getSeconds()+"<br>");
+        document.write(d.getMilliseconds()+"<br>");
+        document.write(d.getTime()+"<br>")
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        document.write(months[d.getMonth()]+"<br>");
+        document.write("day"+"<br>");
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        document.write(days[d.getDay()]);
+    </script>
+</body>
+</html>

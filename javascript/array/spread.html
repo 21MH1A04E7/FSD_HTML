@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Spread operators</h2>
+    <p>it takes an iteration and expands or seperate each element</p>
+    <p>Noation as ...(triple dots)</p>
+    <script>
+        //----------1st way----------//
+        let arr=[2,4,55,65];
+        console.log(arr);
+        console.log(...arr);
+        // -----2nd way------------
+        let arr2=[80,90,100];
+        console.log(50,60,arr2);
+        //spread
+        console.log(50,60,...arr2);
+        //-----------------3rd way----------------
+        let arr3=[3,5,6];
+        let arr4=[8,9,11];
+        console.log(arr3,arr4);
+        //spread
+        console.log(...arr3,...arr4);
+        //adding some content
+        console.log(...arr3,78,98,...arr4,689,479);
+        //------------4th---------------//
+        let name="HARIOM KUMAR ";
+        console.log(name);
+        console.log(...name);
+        //->>>>>>>>>>>>>>>>>>>example--------------//
+        const sum=(a,b,c,d)=>{
+            console.log(a+b+c+d);
+        }
+        let arr6=[10,20,30,40];
+        sum(arr6[0],arr6[1],arr6[2],arr6[3]);
+        sum(...arr6);
+
+
+    </script>
+</body>
+</html>

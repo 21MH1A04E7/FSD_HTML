@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+</head>
+<body>
+    <script>
+        //class calss_name
+        class student{
+            //constructor (value)
+            //It is executed automatically when a new object is created
+            //It is used to initialize object properties
+            constructor(rn){
+                //this keyword pointing the current object
+                this.rollno=rn;
+            }
+        }
+        //creating object
+        let obj=new student(234);
+        console.log("obj",obj.rollno);
+        //output obj 234
+        let obj2=new student(34);
+        console.log(obj2);//new object is created and value of rollno of this paraticular object is 34
+        class student2{
+            constructor(id,rn,n,gen){
+                this.id_card=id;
+                this.rollno=rn;
+                this.name=n;
+                this.gendar=gen
+            }
+        }
+        let obj_student2=new student2(4,'3ddt','hairom','male');
+        console.log(obj_student2)
+        console.log(obj_student2.rollno,obj_student2.id_card,obj_student2.name,obj_student2.gendar);
+        //creating a class
+        class car{
+            constructor(no,nam,model,color){
+                this.number=no;
+                this.name=nam;
+                this.model=model;
+                this.color=color;
+            }
+        }
+        let car_obj=new car(45,"BMW","xyx","red");
+        console.log(car_obj.number,car_obj.name,car_obj.model,car_obj.color);
+        //--------------------------------//
+        class student3{
+            constructor(first_n,last_n,clg){
+                this.first_name=first_n;
+                this.last_name=last_n;
+                this.college=clg;
+                //declearing methode
+                // method_name=function(){value}
+                this.getFullName=function(){
+                    return this.first_name+" "+this.last_name;
+                }
+            }
+        }
+        let full_name=new student3("hariom","kumar","aditya");
+        document.write(full_name.getFullName())
+    </script>
+</body>
+</html>

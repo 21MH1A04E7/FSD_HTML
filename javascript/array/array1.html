@@ -18,6 +18,18 @@
         }
         document.write("<br>");
         document.write(typeof(marks));
+        //destructing operators
+        let arr=[20,30,40,50];
+        // let a=arr[0];
+        // let b=arr[1];
+        // let c=arr[2];
+        // let d=arr[3];
+        let [a,b,c,d]=arr;
+        console.log(a,b,c,d);
+        let [e,f,,g]=arr;//first ,second,fourth element
+        console.log(e,f,g);
+        let [p,,q,r]=arr;
+        console.log(p,q,r);//first,3rd,4th
     </script>
 </body>
 </html>

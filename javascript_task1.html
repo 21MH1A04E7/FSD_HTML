@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Task-1</title>
+	<style type="text/css">
+		.w1{
+			color: rgb(255, 34, 0);
+		}
+		.table1{
+			border:3px solid black;
+		}
+		.button1{
+			height:40px;
+			width: 100px;
+            background-color:rgb(135, 235, 182) ;
+			border-radius:30px;
+			border:none;
+		}
+		.button1:hover{
+			background-color: pink;
+			opacity: 0.6;
+			color:blue;
+		}
+		.button1:active{
+            opacity:0.3;
+		}
+		.glyphicon{
+			background-color:red;
+		}
+		.span1{
+			color:orange;
+			background-color: white;
+			border:10px solid white;
+		}
+	</style>
+</head>
+<body>
+	<div style="width: 800px;height: 100px;margin-top: 80px; margin-left: 30px;">
+		<div style="float: left;"><span style="font-size: 30px;">Product Details</span></div>
+		<div style="float: right;">
+			<button class="button1"  onclick="func()">+Add New</button>
+		</div>
+	</div>
+
+	<table id="q1" border="2" style="margin-left: 30px;" cellpadding="0" class="table1">
+		<tr style="width:800px;height: 40px;">
+			<th style="width:200px;height:40px;">Product id</th>
+			<th style="width:200px;height:40px;">Name</th>
+			<th style="width:200px;height:40px;">Price</th>
+			<th style="width:200px;height:40px;">Actions</th>
+		</tr>
+		<tr>
+			<td>456789</td>
+			<td>Realme mobile</td>
+			<td>16000</td>
+			<td><button onclick="func2(this)"><span class="glyphicon glyphicon-pencil span1" ></span></button> <button onclick="func3(this)"><span class="glyphicon glyphicon-trash" style="color:rgb(255, 0, 98);background:white;border:10px solid white"></span></button></td>
+		</tr>
+		<tr>
+			<td>123456</td>
+			<td>Mi mobile</td>
+			<td>18000</td>
+			<td><button onclick="func2(this)"><span class="glyphicon glyphicon-pencil span1"></span></button> <button onclick="func3(this)"><span class="glyphicon glyphicon-trash" style="color:rgb(255, 0, 98);background:white;border:10px solid white"></span></button></td>
+		</tr>
+		<tr>
+			<td>365648</td>
+			<td>Vivo mobile</td>
+			<td>20000</td>
+			<td><button onclick="func2(this)"><span class="glyphicon glyphicon-pencil span1" ></span></button> <button onclick="func3(this)"><span class="glyphicon glyphicon-trash" style="color:rgb(255, 0, 98);background:white;border:10px solid white"></span></button></td>
+		</tr>
+	</table>
+
+	<script type="text/javascript">
+		function func() {
+            let nr = q1.insertRow();
+            
+            let prod_id = nr.insertCell(0);
+            let name = nr.insertCell(1);
+            let price = nr.insertCell(2);
+            let act = nr.insertCell(3);
+            
+            prod_id.innerHTML = '<input type="number" style="width:196px;height:36px">';
+            name.innerHTML = '<input type="text" style="width:196px;height:36px">';
+            price.innerHTML = '<input type="number" style="width:196px;height:36px">';
+           	act.innerHTML = '<button onclick="func2(this)"><span class="glyphicon glyphicon-pencil" style="color:orange;background:white;border:10px solid white"></span></button> <button onclick="func3(this)"><span class="glyphicon glyphicon-trash" style="color:red;background:white;border:10px solid white"></span></button>'; 
+        }
+
+        function func2(but){
+        	let row = but.parentNode.parentNode;
+        	let cells = row.getElementsByTagName("td");
+
+
+            let prod_id = row.cells[0].innerText;
+            let name = row.cells[1].innerText;
+            let price = row.cells[2].innerText;
+            
+            cells[0].innerHTML = '<input type="number" style="width:196px;height:36px" value="' + prod_id + '">';
+            cells[1].innerHTML = '<input type="text" style="width:196px;height:36px" value="' + name + '">';
+            cells[2].innerHTML = '<input type="number" style="width:196px;height:36px" value="' + price + '">';
+
+            but.innerHTML = '<span class="glyphicon glyphicon-bookmark" style="color:orange;background:white;border:10px solid white"></span>'; 
+            but.onclick = function(){
+            	save(row,but);
+            }
+        }
+
+        function save(row,but){
+        	let cells = row.getElementsByTagName("td");
+            let prod_id = cells[0].querySelector("input").value;
+            let name = cells[1].querySelector("input").value;
+            let price = cells[2].querySelector("input").value;
+
+            cells[0].innerText = prod_id;
+            cells[1].innerText = name;
+            cells[2].innerText = price;
+
+            but.innerHTML = '<span class="glyphicon glyphicon-pencil" style="color:orange;background:white;border:10px solid white"></span>';
+            // but.innerHTML = "Edit";
+            but.onclick = function() {
+                func2(but);
+            }
+        }	
+        function func3(button){
+        	let row = button.parentNode.parentNode;
+        	var a = confirm("Do You Want to Delete The record?");
+            if (a == true){
+                q1.deleteRow(row.rowIndex);
+            } 
+        }
+	</script>
+</body>
+</html>

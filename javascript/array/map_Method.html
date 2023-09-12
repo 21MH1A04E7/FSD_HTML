@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>map method</h1>
+    <table id="_table" border="1" >
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <script>
+        //map method contain three parameter value ,index,arr
+        //we can give the parameter according to our requirement
+        let arr=["hariom","mahi","sujit","vali"];
+        let newarr=arr.map(function(value){
+            document.write(value+"<br>");
+        });
+        const numbers = [4, 9, 16, 25];
+        const newArr = numbers.map(Math.sqrt);
+        document.write(newArr+"<br>");
+        const numbers1 = [65, 44, 12, 4];
+        const newArr1 = numbers1.map(myFunction);
+
+        function myFunction(num) {
+            document.write(num+" ");
+        }
+        document.write("<br>");
+        let arr1=arr.map(function(value,index,arr){
+            return "dear-"+value;
+        });
+        document.write(arr1);
+        const trainees1=[
+            {
+                'name':'hariom',
+                'rollno':45
+            },{
+                'name':"venkat",
+                'rollno':54
+            }
+        ]
+        document.write("<br>");
+        trainees1.map(function(each_trai,i){
+           document.write(i+1+". "+each_trai.name+" "+each_trai.rollno+"<br>");
+        })
+        let tr='';
+        const table=document.getElementById('_table');
+        trainees1.map(function(each_trai,i){
+            tr+="<tr><td>"+(i+1)+"<td><td>"+each_trai.name+"<td><td>"+each_trai.rollno+"<td><tr>";
+        })
+        table.innerHTML=tr;
+    </script>
+</body>
+</html>

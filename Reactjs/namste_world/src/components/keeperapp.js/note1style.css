@@ -1,0 +1,8 @@
+.note1style p{
+    background-color: rgb(244, 223, 223);
+    margin-top: 10px;
+    margin-left:20px;
+    height:100px;
+    width:200px;
+    border-radius: 10px;
+}
