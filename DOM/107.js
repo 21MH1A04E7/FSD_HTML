@@ -3,6 +3,7 @@ const link=document.querySelector("a");
 console.log(link);
 //getAttribute
 //it will type and value  of that attribute  
+console.log(link.getAttribute("href"));
 console.log(link.getAttribute("href").slice(1));//remove the fist cahracter #home=>home
 //we can chage the attribute
 //first argument type and second argument is source 

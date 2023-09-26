@@ -13,3 +13,4 @@ console.log(navItems1);
 console.log(navItems1[0]);
 //second 
 console.log(navItems1[1]);
+console.log(typeof(navItems1[1]));

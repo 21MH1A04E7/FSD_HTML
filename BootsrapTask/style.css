@@ -1,3 +1,17 @@
-.box1{
-    
+.nav1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-selector{
+    background-color:white;
+    height:2rem;
+    width:4rem;
+    font-size:1rem;
+    color:black;
+    border:none;
+}
+#portfolio{
+    width: 6.5rem;
+    margin-right:5px;
 }

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color:#ecf0f1;
+    height:100vh;
+}
+p{
+    background-color: #27ae60;
+    height: 10rem;
+    width:20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:3rem;
+}
+button{
+    background-color: #e67e22;
+    border:2px solid #bdc3c7;
+    height: 3rem;
+    width:5rem;
+    color:#273c75;
+    margin-left:7rem;
+}
+button:hover{
+    background-color: #7f8fa6;
+}
+button:active{
+    opacity:0.5;
+}

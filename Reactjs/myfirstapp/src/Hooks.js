@@ -15,6 +15,5 @@ function Hooks(){
             <p>my name is: {name}</p>
         </div>
     )
-
 }
 export default Hooks;
